@@ -5,16 +5,16 @@ function App() {
     const [count, setCount] = useState(0)
 //comment
     function increment() {
-        return count += 1;
+        setCount (count+1);
     }
 
     function decrement() {
-        return count -= 1;
+        setCount (count-1);
     }
 
     return (
         <div className="App">
-            <div>{`Amount = ${count}`}</div>
+            <div>{`Count = ${count}`}</div>
             <button onClick={increment}>Plus 1
             </button>
             <button onClick={decrement}>Minus 1
