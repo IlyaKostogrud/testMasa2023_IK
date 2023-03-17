@@ -1,11 +1,12 @@
-import './App.css';
-import {useState} from "react";
+import './styles/App.css';
 import CounterFunc from "./components/CounterFunc";
 import CounterClass from "./components/CounterClass";
+import InputTextLineFunc from "./components/InputTextLineFunc";
+import PostItem from "./components/PostItem";
 
 function App() {
 
-    const [value, setValue] = useState('Text in input')
+
 
 
     return (
@@ -14,12 +15,9 @@ function App() {
             <CounterFunc/>
             <CounterClass/>
             <CounterClass/>
-            <h2>{value}</h2>
-            <input
-                type="text"
-                defaultValue={value}
-                onChange={event => setValue(event.target.value)}
-            />
+            <InputTextLineFunc/>
+            <PostItem/>
+            <PostItem/>
         </div>
     );
 }

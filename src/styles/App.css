@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+  width: 800px;
+}
+
+.post{
+  display: flex;
+  padding: 15px;
+  border: 2px solid teal;
+  margin: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
