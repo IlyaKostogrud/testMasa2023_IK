@@ -16,8 +16,9 @@ function App() {
             <CounterClass/>
             <CounterClass/>
             <InputTextLineFunc/>
-            <PostItem/>
-            <PostItem/>
+            <PostItem post={{id:1, title:'First post', body:'First body text'}}/>
+            <PostItem post={{id:2, title:'Second post', body:'dfgdfgdfg'}}/>
+
         </div>
     );
 }

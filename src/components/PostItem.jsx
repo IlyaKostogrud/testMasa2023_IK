@@ -1,10 +1,13 @@
 import React from 'react';
 
-const PostItem = () => {
+const PostItem = (props) => {
+
+
     return (
         <div className={"post"}>
+            <strong>{props.post.id}. {props.post.title}</strong>
             <div className={"post_content"}>
-                Some info
+                {props.post.body}
             </div>
             <div className={"post_btn"}>
                 <button>Delete</button>
